@@ -11,8 +11,12 @@ catchChar()
     console.error(error);
 });
 
+catchText();
+
 async function catchText(){
-    
+    const response = await fetch('sample.txt');
+    const textResponse = await response.text();
+    document.getElementById('info').textContent = textResponse;
 }
 
 async function catchChar(){
