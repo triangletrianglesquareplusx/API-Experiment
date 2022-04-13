@@ -11,7 +11,10 @@ catchChar()
     console.error(error);
 });
 
-catchText();
+catchText()
+.catch(error=>{
+    console.error(error);
+});
 
 async function catchText(){
     const response = await fetch('sample.txt');
