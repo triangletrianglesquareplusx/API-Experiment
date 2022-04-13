@@ -11,6 +11,10 @@ catchChar()
     console.error(error);
 });
 
+async function catchText(){
+    
+}
+
 async function catchChar(){
     const response = await fetch('finn.jpg');
     const blob = await response.blob();
