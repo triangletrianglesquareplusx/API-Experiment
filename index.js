@@ -8,5 +8,8 @@ fetch('finn.jpg')
 })
 .then(blob=>{
     console.log(blob);
-    document.getElementById('finn').src = URL.createObjectURL(blob);
+    document.getElementById('fin').src = URL.createObjectURL(blob);
+})
+.catch(error=>{
+    console.error(error);
 });
