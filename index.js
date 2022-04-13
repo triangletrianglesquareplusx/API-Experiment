@@ -1,2 +1,5 @@
 'use strict'
-console.log('hey there!');
+console.log('about to fetch a character');
+fetch('finn.jpg').then(response=>{
+    console.log(response);
+});
